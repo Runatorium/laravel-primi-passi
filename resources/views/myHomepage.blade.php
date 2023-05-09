@@ -8,7 +8,7 @@
 </head>
 <header>
     <ul>
-        <li> <a href="/">home</a></li>
+        <li> <a href="{{route('/')}}">home</a></li>
         <li><a href="{{route('about')}}">about</a></li>
     </ul>
 </header>
