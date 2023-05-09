@@ -25,8 +25,17 @@ Route::get('/', function () {
     ];
 
 
-
-
-
     return view('myHomepage', $info);
-});
+})->name('home');
+
+Route::get('about', function () {
+    $descrizione = [
+        'descrizione' => [
+            'titolo',
+            'storia',
+            'altro'
+        ]
+    ];
+
+    return view('about', $descrizione);
+})->name('about');

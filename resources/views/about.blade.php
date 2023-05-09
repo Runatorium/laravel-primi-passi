@@ -6,17 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<header>
-    <ul>
-        <li> <a href="/">home</a></li>
-        <li><a href="{{route('about')}}">about</a></li>
-    </ul>
-</header>
 <body>
     <?php
-    echo 'ciao mondo';
-    foreach ($users as $user) {
-        echo $user;
+    echo 'Sezione About';
+    foreach($descrizione as $informazione){
+        echo $informazione;
     }
     ?>
 </body>
